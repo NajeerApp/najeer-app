@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نجير - تأجير المعدات والخدمات</title>
+    <style>
+        /* CSS مبسط */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background: #f5f5f5; color: #333; line-height: 1.6; direction: rtl; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* شريط التنقل */
+        .navbar { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 1rem; }
+        .logo { font-size: 24px; font-weight: bold; color: #2563eb; text-decoration: none; }
+        
+        /* الصفحة الرئيسية */
+        .hero { background: linear-gradient(135deg, #2563eb, #10b981); color: white; text-align: center; padding: 4rem 1rem; }
+        
+        /* الأقسام */
+        .section { padding: 3rem 1rem; }
+        .card { background: white; border-radius: 10px; padding: 20px; margin: 15px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        
+        /* الأزرار */
+        .btn { background: #2563eb; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        
+        /* الفوتر */
+        footer { background: #1f2937; color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-tools"></i> نجير
+            </a>
+            <div style="float: left;">
+                <a href="#login" style="margin-left: 15px;">تسجيل دخول</a>
+                <a href="#add">أضف عرض</a>
+                <a href="#services">الخدمات</a>
+                <a href="#equipment">المعدات</a>
+                <a href="#home">الرئيسية</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>أدوات تحتاجها، خدمات تثق بها</h1>
+            <p>منصة نجير تربطك بمقدمي الخدمات والمعدات في حيك</p>
+            
+            <!-- شريط البحث -->
+            <div style="background: white; padding: 20px; border-radius: 10px; max-width: 600px; margin: 30px auto;">
+                <input type="text" placeholder="ابحث عن أدوات أو خدمات..." style="width: 70%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <button class="btn" style="padding: 10px 20px;">
+                    <i class="fas fa-search"></i> بحث
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- المعدات -->
+    <section id="equipment" class="section">
+        <div class="container">
+            <h2><i class="fas fa-tools"></i> المعدات المتاحة</h2>
+            
+            <div class="card">
+                <h3>مثقاب كهربائي احترافي</h3>
+                <p>مثقاب قوي لجميع الأعمال المنزلية والورش</p>
+                <p><strong>السعر:</strong> 30 ريال/يوم</p>
+                <p><i class="fas fa-map-marker-alt"></i> حي النزهة، الرياض</p>
+                <button class="btn"><i class="fas fa-shopping-cart"></i> احجز الآن</button>
+            </div>
+            
+            <div class="card">
+                <h3>مكنسة كهربائية صناعية</h3>
+                <p>مكنسة قوية للمساحات الكبيرة</p>
+                <p><strong>السعر:</strong> 50 ريال/يوم</p>
+                <p><i class="fas fa-map-marker-alt"></i> حي العليا، الرياض</p>
+                <button class="btn"><i class="fas fa-shopping-cart"></i> احجز الآن</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- الخدمات -->
+    <section id="services" class="section" style="background: #f0f9ff;">
+        <div class="container">
+            <h2><i class="fas fa-handshake"></i> الخدمات المهنية</h2>
+            
+            <div class="card">
+                <h3>فني تكييف معتمد</h3>
+                <p>صيانة وتركيب جميع أنواع التكييفات</p>
+                <p><strong>السعر:</strong> 150 ريال</p>
+                <p><i class="fas fa-user-tie"></i> أحمد السعدي</p>
+                <button class="btn"><i class="fas fa-calendar-check"></i> احجز الخدمة</button>
+            </div>
+            
+            <div class="card">
+                <h3>كهربائي منازل</h3>
+                <p>حل جميع مشاكل الكهرباء</p>
+                <p><strong>السعر:</strong> 100 ريال</p>
+                <p><i class="fas fa-user-tie"></i> محمد القحطاني</p>
+                <button class="btn"><i class="fas fa-calendar-check"></i> احجز الخدمة</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- إضافة عرض -->
+    <section id="add" class="section">
+        <div class="container">
+            <h2><i class="fas fa-plus-circle"></i> أضف خدمتك أو معَدتك</h2>
+            
+            <div style="background: white; padding: 30px; border-radius: 10px; max-width: 500px; margin: 0 auto;">
+                <div style="margin-bottom: 15px;">
+                    <label>نوع العرض:</label>
+                    <select style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option value="">اختر...</option>
+                        <option value="equipment">معدة للإيجار</option>
+                        <option value="service">خدمة مهنية</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label>العنوان:</label>
+                    <input type="text" placeholder="مثال: مثقاب كهربائي" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label>السعر (ريال):</label>
+                    <input type="number" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+                
+                <button class="btn" style="width: 100%; padding: 12px;">
+                    <i class="fas fa-paper-plane"></i> نشر العرض
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <p>© 2024 نجير. جميع الحقوق محفوظة</p>
+            <p>منصة تأجير المعدات وطلب الخدمات المحلية</p>
+            <p style="margin-top: 20px;">
+                <a href="#" style="color: white; margin: 0 10px;">الشروط والأحكام</a> | 
+                <a href="#" style="color: white; margin: 0 10px;">سياسة الخصوصية</a> | 
+                <a href="#" style="color: white; margin: 0 10px;">اتصل بنا</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // وظائف بسيطة
+        function showAlert(message) {
+            alert(message);
+        }
+        
+        // عند النقر على أزرار الحجز
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                if(this.innerHTML.includes('احجز')) {
+                    const item = this.parentElement.querySelector('h3').textContent;
+                    const price = this.parentElement.querySelector('strong').nextSibling.textContent;
+                    showAlert(`شكراً لك! سيتم التواصل معك لتأكيد حجز: ${item} ${price}`);
+                }
+            });
+        });
+        
+        console.log('تطبيق نجير يعمل بنجاح!');
+    </script>
+</body>
+</html>
